@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import "./containedbtn.scss";
 
 function ContainedButton({ name, type }) {
-  return <button className={`btn-container ${type}`}>{name}</button>;
+  return <button className={`btn-${type}`}>{name}</button>;
 }
 
 ContainedButton.propTypes = {
