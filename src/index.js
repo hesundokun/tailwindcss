@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div className="bg-white dark:bg-black h-screen flex justify-center items-center">
-      <ContainedButton name="Default" type="primary" />
+      <ContainedButton name="Default" type="default" />
     </div>
   </React.StrictMode>
 );
