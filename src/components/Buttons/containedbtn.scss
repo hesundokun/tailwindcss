@@ -1,0 +1,23 @@
+.btn-container {
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-family: "Public Sans", sans-serif;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    &.default {
+        background-color: rgb(33, 43, 54);
+        &:hover {
+            background-color: rgb(69, 79, 91);
+        }
+    }
+
+    &.primary {
+        background-color: rgb(0, 167, 111);
+        &:hover {
+            background-color: rgb(0, 120, 103);
+        }
+    }
+
+
+}

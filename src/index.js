@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import { ContainedButton } from './components/Buttons';
+
+import './index.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="bg-white dark:bg-black h-screen flex justify-center items-center">
+      <ContainedButton name="Default" type="primary" />
+    </div>
   </React.StrictMode>
 );
 
