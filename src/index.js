@@ -1,16 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
 
-import { ContainedButton } from './components/Buttons';
+import { ContainedButton } from "./components/Buttons";
 
-import './index.scss';
+import "./index.scss";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className="bg-white dark:bg-black h-screen flex justify-center items-center">
-      <ContainedButton name="Default" type="primary" />
+    <div className="bg-white w-[600px] h-[200px] p-8 m-8 rounded-xl shadow-2xl flex justify-between items-center">
+      <ContainedButton name="Default" type="default" />
+      <ContainedButton name="primary" type="primary" />
+      <ContainedButton name="secondary" type="secondary" />
+      <ContainedButton name="disabled" type="disabled" />
+      <ContainedButton name="link" type="link" />
     </div>
   </React.StrictMode>
 );
