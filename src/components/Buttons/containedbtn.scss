@@ -19,15 +19,15 @@
         @include btn;
     }
     .btn-primary {
-    @include btn($cursor:pointer,$color:#fff, $bg-color:rgb(0, 167, 111), $bg-color-hover:rgb(0, 120, 103), $shodow:rgba(0, 167, 111, 0.24) 0px 8px 16px 0px); 
+    @include btn( $bg-color:rgb(0, 167, 111), $bg-color-hover:rgb(0, 120, 103), $shodow:rgba(0, 167, 111, 0.24) 0px 8px 16px 0px); 
     }
     .btn-disabled {
-        @include btn($cursor:none,$color:rgba(145, 158, 171, 0.8), $bg-color:rgba(145, 158, 171, 0.24), $bg-color-hover:rgba(145, 158, 171, 0.24), $shodow:none); 
+        @include btn($cursor:none,$color:rgba(145, 158, 171, 0.8), $bg-color:rgba(145, 158, 171, 0.24), $bg-color-hover:rgba(145, 158, 171, 0.24)); 
     }
     .btn-secondary {
-        @include btn($cursor:help,$color:#fff, $bg-color:rgb(142, 51, 255), $bg-color-hover:rgb(81, 25, 183), $shodow:rgba(142, 51, 255, 0.24) 0px 8px 16px 0px); 
+        @include btn($cursor:help, $bg-color:rgb(142, 51, 255), $bg-color-hover:rgb(81, 25, 183), $shodow:rgba(142, 51, 255, 0.24) 0px 8px 16px 0px); 
     }
     .btn-link {
-        @include btn($cursor:wait,$color:#fff, $bg-color:rgb(33, 43, 54), $bg-color-hover:rgb(69, 79, 91), $shodow:none); 
+        @include btn($cursor:wait); 
     }
 
